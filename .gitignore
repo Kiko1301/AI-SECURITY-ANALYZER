@@ -1,0 +1,49 @@
+# ── AI SOC Analyzer — .gitignore ────────────────────────────────
+
+# SQLite database (contains your network topology — keep private)
+soc_database.db
+*.db
+*.db-shm
+*.db-wal
+
+# Legacy JSON device store
+known_devices.json
+
+# Generated reports (can be large; contain sensitive network data)
+reports/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Environment / secrets file (if you ever externalize config)
+.env
+secrets.py
+config_local.py
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/

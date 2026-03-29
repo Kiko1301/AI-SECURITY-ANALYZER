@@ -1,0 +1,8 @@
+# AI SOC Analyzer — Python dependencies
+# Install with: pip install -r requirements.txt
+
+requests>=2.31.0
+
+# Everything else used by this project is Python standard library:
+#   sqlite3, subprocess, socket, smtplib, threading, re, os, time,
+#   shutil, pathlib, datetime, email, traceback

@@ -1,5 +1,9 @@
 # ── AI SOC Analyzer — .gitignore ────────────────────────────────
 
+# Real credentials — never commit. Copy soc/secrets.example.py to
+# soc/secrets.py and fill in your real values there.
+soc/secrets.py
+
 # SQLite database (contains your network topology — keep private)
 soc_database.db
 *.db
@@ -26,18 +30,8 @@ env/
 .env/
 ENV/
 
-# IDE / editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
-Thumbs.db
-
-# Environment / secrets file (if you ever externalize config)
+# Environment / secrets files (if you ever externalize config further)
 .env
-secrets.py
 config_local.py
 
 # Pytest / coverage
@@ -47,3 +41,15 @@ htmlcov/
 dist/
 build/
 *.egg-info/
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs (if you add file logging later)
+*.log
